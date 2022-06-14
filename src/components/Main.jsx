@@ -7,7 +7,12 @@ import Jano2 from "../assets/Angulo,JohnRussel(2).jpg";
 const Main = () => {
 	return (
 		<div>
-			<div className="grid place-items-center pb-[10%] justify-center grid-cols-1 md:grid-cols-2 w-full" id="Main">
+			<div id="Main" className="grid place-items-center pb-[10%] justify-center w-full
+			grid-cols-1
+			md:grid-cols-1
+			lg:grid-cols-2
+			xl:grid-cols-2
+			">
 				<div>
 				<div className="w-full px-14 pt-[15%]">
 					<motion.div
@@ -15,10 +20,14 @@ const Main = () => {
 						whileInView={{y: 0}}
 						viewport={{once: false}}
 						transition={{duration: 0.6}}
-						className="font-ProductSans uppercase tracking-[0.2rem] py-3 text-center md:text-left 
-					md:text-xs
-					lg:text-xs"
-					>
+						className="font-ProductSans uppercase tracking-[0.2rem] py-3 
+						text-center
+						text-base
+						md:text-center 
+						lg:text-left
+						md:text-lg
+						lg:text-xs
+						xl:text-lg">
 						Welcome to my Website Portfolio
 					</motion.div>
 
@@ -27,10 +36,16 @@ const Main = () => {
 						whileInView={{y: 0}}
 						viewport={{once: false}}
 						transition={{duration: 0.7}}
-						className="text-black font-semibold text-center py-3 text-5xl md:text-left
-					md:text-lg
-					lg:text-4xl
-					xl:text-6xl"
+						className="text-black font-semibold text-center 
+						md:py-3 
+						lg:py-0
+						xl:py-3
+						md:text-center
+						lg:text-left
+						text-3xl 
+						md:text-6xl
+						lg:text-4xl
+						xl:text-6xl"
 					>
 						Hi, I'm <span className="text-[#ff3656]">John Russel </span>
 					</motion.p>
@@ -40,13 +55,27 @@ const Main = () => {
 						whileInView={{y: 0}}
 						viewport={{once: false}}
 						transition={{duration: 0.8}}
-						className="py-3 text-center md:text-left"
+						className="py-3 
+						text-center
+						md:text-center
+						lg:text-left
+						xl:text-left"
 					>
-						<div className="grid place-items-center md:place-items-start">
-							<div className="text-[#ff3656] font-semibold text-4xl md:text-6xl lg:text-3xl flex gap-2">
-								{" "}
-								a
-								<div className="text-black font-semibold text-4xl md:text-2xl lg:text-3xl">
+						<div className="grid 
+						place-items-center
+						md:place-items-center
+						lg:place-items-start
+						xl:place-items-start">
+							<div className="text-[#ff3656] font-semibold flex gap-2
+							text-2xl
+							md:text-5xl
+							lg:text-3xl
+							xl:text-5xl"> a
+								<div className="text-black font-semibold
+								text-2xl 
+								md:text-5xl 
+								lg:text-3xl
+								xl:text-5xl">
 									<TypeWriterEffect
 										loop={10}
 										startDelay={2000}
@@ -64,12 +93,26 @@ const Main = () => {
 							</div>
 						</div>
 					</motion.p>
+					
 					<motion.div
 						initial={{y: 100, opacity: 1}}
 						whileInView={{y: 0}}
 						viewport={{once: false}}
 						transition={{duration: 0.9}}
-						className="py-3 px-5 md:px-0 font-ProductSans text-zinc-600 text-center md:text-left text-[20px] mb-32"
+						className="font-ProductSans text-zinc-600 
+						pb-3
+						pt-3
+						text-center
+						md:text-center
+						md:px-20
+						lg:px-0
+						xl:px-0
+						text-base
+						xl:text-lg
+						lg:text-left
+						xl:text-left
+						lg:mb-6
+						2xl:mb-40"
 					>
 						<p>
 							I’m a Front End Developer, Video Editor, and Vector Artist living
@@ -82,20 +125,32 @@ const Main = () => {
 						</p>
 					</motion.div>
 
-					<div
-						className="font-Gilroy uppercase text-center md:text-left mb-16
-				md:hidden
-				lg:hidden"
-					>
-						<motion.p
+					<div className="
+						w-full
+						hidden
+						md:hidden
+						lg:grid
+						xl:grid">
+							<motion.div
 							initial={{y: 100, opacity: 1}}
 							whileInView={{y: 0}}
 							viewport={{once: false}}
 							transition={{duration: 1}}
-							className="pb-8 text-zinc-700"
-						>
+							className="pb-8 text-zinc-700 uppercase font-Gilroy
+							md:text-left 
+							lg:text-base
+							">
 							Here are my social links
-						</motion.p>
+						</motion.div>
+					</div>
+
+
+					<div className="
+						w-full
+						hidden
+						md:hidden
+						lg:grid
+						xl:grid">
 
 						<motion.div
 							initial={{y: 100, opacity: 1}}
@@ -147,9 +202,12 @@ const Main = () => {
 					className="p-4
 
 				h-auto
-
-				md:w-[18rem]
+				md:mt-[3rem]
+				w-[20rem]
+				md:w-[30rem]
 				lg:w-[25rem]
+				xl:w-[30rem]
+				2xl:w-[40rem]
 				"
 				>
 					<motion.div
@@ -167,31 +225,40 @@ const Main = () => {
 
 			<div className=" font-Gilroy mb-16 grid place-items-center">
 				
-
-
 			<motion.div
 					initial={{y: 100, opacity: 1}}
 					whileInView={{y: 0}}
 					viewport={{once: false}}
 					transition={{duration: 1}}
-					className="pb-5 text-zinc-700 text-center"
-				>
+					className="pb-5 text-zinc-700 text-center uppercase font-Gilroy
+					w-full
+					md:grid
+					lg:hidden
+					xl:hidden">
 					Here are my social links
-				</motion.div>
+			</motion.div>
 
 				<motion.div
 					initial={{y: 100, opacity: 1}}
 					whileInView={{y: 0}}
 					viewport={{once: false}}
 					transition={{duration: 1.1}}
-					className="flex text-center place-items-center gap-10 justify-center md:justify-start text-white md:text-black"
+					className="flex text-center place-items-center gap-10 justify-center md:justify-center text-white md:text-black
+					w-full
+					md:flex
+					lg:hidden
+					xl:hidden"
 				>
 					<a href="https://www.facebook.com/janoangulo1219" target="_blank">
 						<motion.div
 							whileHover={{y: -10}}
 							whileTap={{scale: 0.9}}
-							className="w-16 h-16 grid place-items-center justify-center rounded-lg hover:text-white hover:bg-[#ff3656] text-2xl bg-[#ff3656] md:bg-[#f5f7fa] drop-shadow-xl"
-						>
+							className="w-16 h-16 grid place-items-center justify-center rounded-lg hover:text-white hover:bg-[#ff3656] 
+							text-2xl drop-shadow-xl
+							text-white
+							bg-[#ff3656] 
+							md:bg-[#ff3656]
+							lg:bg-[#f5f7fa]">
 							<i class=" fa-brands fa-facebook-f"></i>
 						</motion.div>
 					</a>
@@ -200,7 +267,12 @@ const Main = () => {
 						<motion.div
 							whileHover={{y: -10}}
 							whileTap={{scale: 0.9}}
-							className="w-16 h-16 grid place-items-center justify-center rounded-lg hover:text-white hover:bg-[#ff3656] text-2xl bg-[#ff3656] md:bg-[#f5f7fa] drop-shadow-xl"
+							className="w-16 h-16 grid place-items-center justify-center rounded-lg hover:text-white hover:bg-[#ff3656] 
+							text-2xl drop-shadow-xl
+							text-white
+							bg-[#ff3656] 
+							md:bg-[#ff3656]
+							lg:bg-[#f5f7fa]"
 						>
 							<i class="fa-brands fa-behance"></i>
 						</motion.div>
@@ -210,7 +282,12 @@ const Main = () => {
 						<motion.div
 							whileHover={{y: -10}}
 							whileTap={{scale: 0.9}}
-							className="w-16 h-16 grid place-items-center justify-center rounded-lg hover:text-white hover:bg-[#ff3656] text-3xl bg-[#ff3656] md:bg-[#f5f7fa] drop-shadow-xl"
+							className="w-16 h-16 grid place-items-center justify-center rounded-lg hover:text-white hover:bg-[#ff3656] 
+							text-3xl drop-shadow-xl
+							text-white
+							bg-[#ff3656] 
+							md:bg-[#ff3656]
+							lg:bg-[#f5f7fa]"
 						>
 							<i class="fa-brands fa-instagram"></i>
 						</motion.div>

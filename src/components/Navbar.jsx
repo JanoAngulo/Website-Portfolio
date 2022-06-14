@@ -5,8 +5,14 @@ import {motion} from "framer-motion";
 const Navbar = () => {
 	return (
 		<motion.div className="w-full h-[60px] bg-[#eceff4] drop-shadow-md">
-			<div className="flex justify-between py-3 px-14 ">
-				<div className="font-ProductSansB text-2xl hover:text-[#ff3c3c] font-semibold">
+			<div className="flex py-3 px-14 
+			justify-between
+			md:justify-center
+			lg:justify-between">
+				<div className="font-ProductSansB text-2xl hover:text-[#ff3c3c] font-semibold 
+				md:hidden
+				lg:grid
+				xl:grid">
 					<Link to="Main" spy={true} smooth={true} offset={-100} duration={500}>
 						JRLA
 					</Link>
