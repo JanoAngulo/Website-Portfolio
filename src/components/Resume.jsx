@@ -39,7 +39,7 @@ const Resume = () => {
 					</div>
 
 					<div className=" pr-0 md:pr-10">
-						<div className="flex place-items-center justify-items-center py-5">
+						<div className="flex place-items-center justify-items-center pt-5">
 							<div className="hidden md:flex">
 								<div className="w-5 h-5 rounded-full bg-[#dadde4] flex place-content-center place-items-center justify-items-center ">
 									<div className="w-3 h-3 rounded-full bg-[white]"></div>
@@ -48,7 +48,7 @@ const Resume = () => {
 							<div className="border-2 w-[2vh] border-[#dadde4] hidden md:flex"></div>
 
 							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
-								<div className="px-6 py-4">
+								<div className="px-6 py-4 w-full">
 									<p className="font-Gilroy text-2xl pb-3">
 										{" "}
 										Bachelor of Science in Information and Techology
@@ -56,15 +56,16 @@ const Resume = () => {
 									<p className="font-ProductSans text-lg">
 										Major in Web and Mobile Development
 									</p>
+									<p className="font-ProductSans text-lg">
+										Bulacan State University 
+									</p>
+
 									<p className="font-ProductSans">College | 2018-Present</p>
 									<div className="h-[5vh]">
 										<div className="border-b-4 pb-5 border-[#e6e7ec]" />
 									</div>
 									<p className="font-ProductSans">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-										urna est, dignissim vitae orci et, pharetra tristique elit.
-										Quisque porttitor ante nec sapien maximus euismod. In sed
-										ligula a nisl mattis consectetur nec vitae sapien.{" "}
+									I took my degree at Bulacan State University for 4yrs where I have spent learning different IT-related studies and enhancing my skills throughout those years. {" "}
 									</p>
 								</div>
 							</div>
@@ -72,7 +73,7 @@ const Resume = () => {
 					</div>
 
 					<div className="pr-0 md:pr-10">
-						<div className="flex place-items-center justify-items-center py-5">
+						<div className="flex place-items-center justify-items-center py-4">
 							<div className="hidden md:flex">
 								<div className="w-5 h-5 rounded-full bg-[#dadde4] flex place-content-center place-items-center justify-items-center ">
 									<div className="w-3 h-3 rounded-full bg-[white]"></div>
@@ -81,7 +82,7 @@ const Resume = () => {
 							<div className="border-2 w-[2vh] border-[#dadde4] hidden md:flex"></div>
 
 							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
-								<div className="px-6 py-4">
+								<div className="px-6 py-4 w-full">
 									<p className="font-Gilroy text-2xl pb-3">
 										Science, Technology, Engineering, and Mathematics
 									</p>
@@ -98,10 +99,7 @@ const Resume = () => {
 										<div className="border-b-4 pb-5 border-[#e6e7ec]" />
 									</div>
 									<p className="font-ProductSans">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-										urna est, dignissim vitae orci et, pharetra tristique elit.
-										Quisque porttitor ante nec sapien maximus euismod. In sed
-										ligula a nisl mattis consectetur nec vitae sapien.{" "}
+									I spent my junior year at LCUP which helped me become a better person since it’s a Catholic school. I took the strand STEM in LCUP exposed to complex mathematical and scientific theories and concepts that served as a foundation for my college.{" "}
 									</p>
 								</div>
 							</div>
@@ -163,8 +161,9 @@ const Resume = () => {
 									<a href={CV} target="_blank">
 									<button className="w-full h-10 mb-5 font-Gilroy rounded-xl shadow-xl bg-[#ffca26] hover:bg-[#ff3656] 
 									text-black hover:text-white ">Download CV</button>
-									<motion.img  whileHover={{scale: 1.02}} src={JRLA} alt="Resume" className="h-full rounded-xl"></motion.img>
 									</a>
+									<motion.img  whileHover={{scale: 1.02}} src={JRLA} alt="Resume" className="h-full rounded-xl"></motion.img>
+
 
 								</div>
 							</div>
