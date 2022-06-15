@@ -9,14 +9,15 @@ const Navbar = () => {
 			justify-between
 			md:justify-center
 			lg:justify-between">
-				<div className="font-ProductSansB text-2xl hover:text-[#ff3c3c] font-semibold 
+				<motion.div className="font-ProductSansB text-2xl hover:text-[#ff3c3c] font-semibold 
 				md:hidden
 				lg:grid
 				xl:grid">
-					<Link to="Main" spy={true} smooth={true} offset={-100} duration={500}>
+					<Link 
+					 to="Main" spy={true} smooth={true} offset={-100} duration={500}>
 						JRLA
 					</Link>
-				</div>
+				</motion.div>
 				<ul className="md:flex justify-between md:gap-10 font-ProductSansB text-base uppercase font-semibold hidden">
 					<motion.li whileTap={{scale: 0.9}} className="hover:text-[#ff3c3c] ">
 						<Link

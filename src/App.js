@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Features from './components/Features';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 			<Features/>
 			<Portfolio/>
 			<Resume/>
+			<Contact/>
 		</div>
 	);
 }

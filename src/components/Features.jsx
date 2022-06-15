@@ -31,7 +31,12 @@ const Features = () => {
 				What I do
 			</motion.div>
 
-			<div className="grid gap-4 pb-32 place-items-center justify-center
+			<div className="grid pb-32 place-items-center justify-center
+				gap-8
+				md:gap-8
+				lg:gap-4
+				xl:gap-4
+				2xl:gap-10
 				md:grid-cols-1
 				lg:grid-cols-3
 				xl:grid-cols-3

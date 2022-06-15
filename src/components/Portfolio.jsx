@@ -55,7 +55,7 @@ const Portfolio = () => {
 
 
 			{/* //==================================================MODAL======================================================= */}
-        <motion.div 
+        <div
 				id="Modal" className="relative z-10 hidden">
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           <div className="fixed inset-0 overflow-y-auto">
@@ -94,7 +94,7 @@ const Portfolio = () => {
                 </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
 			{/* //========================================================================================================= */}
 
@@ -123,7 +123,9 @@ const Portfolio = () => {
 						h-[90%]"
 					>
 						<div className="p-[5%] h-full ">
-							<img id="Image1" onClick={()=>{openModal("Card1")}} className="rounded-xl bg-slate-200 mb-4
+							<motion.img
+							
+							 id="Image1" onClick={()=>{openModal("Card1")}} className="rounded-xl bg-slate-200 mb-4
 							w-full
 							h-[10rem]
 							md:h-[20rem]
@@ -132,7 +134,7 @@ const Portfolio = () => {
 							2xl:h-[20rem]
 							
 							">
-							</img>
+							</motion.img>
 							<p className="hidden" id="Card1-Feature">Feature Feature</p>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left" id="Card1-Title">Title 1</p>
 							<p className="w-full text-center md:text-left" id="Card1-Paragraph">
