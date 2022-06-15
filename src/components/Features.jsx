@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const Features = () => {
 	return (
-		<div className="w-full px-14 " id="Features">
+		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5 " id="Features">
 			<motion.div
 				initial={{x: -40}}
 				whileInView={{x: 0}}
@@ -56,7 +56,7 @@ const Features = () => {
 						// whileTap={{scale: 0.9}}
 						className="grid w-full place-items-center justify-center hover:bg-[#ff3656] hover:text-white bg-[#f5f7fa] drop-shadow-xl rounded-2xl">
 						<div className="grid p-5">
-							<i className="fa-solid fa-laptop-code text-5xl
+							<i className="fa-solid fa-laptop-code text-5xl 
 							lg:grid 
 							hidden
 							md:flex 

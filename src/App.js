@@ -6,13 +6,14 @@ import Features from './components/Features';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Navbar2 from './components/Navbar';
 
 
 function App() {
 	return (
 		<div className='w-full h-full bg-[#eceff4] '>
 			<div className='sticky top-0 z-[999]'>
-			<Navbar />
+			<Navbar/>
 			</div>
 			<Main />
 			<Features/>

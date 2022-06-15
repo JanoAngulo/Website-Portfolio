@@ -31,7 +31,7 @@ const Portfolio = () => {
 
 	return (
 		
-		<div className="w-full px-14 " id="Portfolio">
+		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5" id="Portfolio">
 			<motion.div
 				initial={{y: 40}}
 				whileInView={{y: 0}}
@@ -39,7 +39,7 @@ const Portfolio = () => {
 				transition={{duration: 0.8}}
 				className="font-Gilroy text-lg text-[#ff3656] text-center uppercase"
 			>
-				You can check my portfolio here
+				You can check my works here
 			</motion.div>
 
 			<motion.div
@@ -76,14 +76,19 @@ const Portfolio = () => {
                     </motion.button>
                   </div>
 
-									<div className="rounded-xl bg-slate-200 w-full h-[30rem] mt-10 md:mt-0"></div>
+									<div className="rounded-xl bg-slate-200 w-full mt-10 md:mt-0
+									2xl:h-[30rem]
+									xl:h-[30rem]
+									lg:h-[20rem]
+									md:h-full
+									h-[10rem]"></div>
 									
-									<div className="w-[80%]">
+									<div className="w-[90%]">
                   <p className="text-xl font-ProductSans leading-6 text-gray-900 py-4" id="ModalFeature"> Featured - Design </p>
 									<p className="ModalTitle1 text-5xl font-Gilroy leading-6 text-gray-900 py-4" id="ModalTitle">Featured Title 1</p>
 
                   <div className="py-4 w-full">
-                    <p className="ModalParagraph1 text-base text-gray-500" id="ModalParagraph">
+                    <p className="ModalParagraph1 text-base text-gray-700 font-ProductSans" id="ModalParagraph">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl urna. Donec vel nulla at orci euismod accumsan sit amet ac eros. Etiam lacus ante, sollicitudin vel massa quis, scelerisque ullamcorper metus. <br /> <br />
 										 Vestibulum sodales tortor eget ipsum molestie pellentesque. Sed eget leo id enim pellentesque congue ut at eros.
                     </p>
@@ -137,7 +142,7 @@ const Portfolio = () => {
 							</motion.img>
 							<p className="hidden" id="Card1-Feature">Feature Feature</p>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left" id="Card1-Title">Title 1</p>
-							<p className="w-full text-center md:text-left" id="Card1-Paragraph">
+							<p className="w-full text-center md:text-left font-ProductSans text-gray-700" id="Card1-Paragraph">
 								I found myself particulary interested in designing, prototyping,
 								and making mockup designs that helped me pursue and become a
 								good Website Developer.	
@@ -172,7 +177,7 @@ const Portfolio = () => {
 							">
 							</img>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left" id="Card2-Title">Title 2</p>
-							<p className="w-full text-center md:text-left" id="Card2-Paragraph">
+							<p className="w-full text-center md:text-left font-ProductSans text-gray-700" id="Card2-Paragraph">
 								I found myself particulary interested in designing, prototyping,
 								and making mockup designs that helped me pursue and become a
 								good Website Developer.	
@@ -207,7 +212,7 @@ const Portfolio = () => {
 							">
 							</div>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left ">Title 3</p>
-							<p className="w-full text-center md:text-left">
+							<p className="w-full text-center md:text-left font-ProductSans text-gray-700">
 								I found myself particulary interested in designing, prototyping,
 								and making mockup designs that helped me pursue and become a
 								good Website Developer.	
@@ -242,7 +247,7 @@ const Portfolio = () => {
 							">
 							</div>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left ">Title 4</p>
-							<p className="w-full text-center md:text-left">
+							<p className="w-full text-center md:text-left font-ProductSans text-gray-700">
 								I found myself particulary interested in designing, prototyping,
 								and making mockup designs that helped me pursue and become a
 								good Website Developer.	
@@ -277,7 +282,7 @@ const Portfolio = () => {
 							">
 							</div>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left ">Title 5</p>
-							<p className="w-full text-center md:text-left">
+							<p className="w-full text-center md:text-left font-ProductSans text-gray-700">
 								I found myself particulary interested in designing, prototyping,
 								and making mockup designs that helped me pursue and become a
 								good Website Developer.	
@@ -312,7 +317,7 @@ const Portfolio = () => {
 							">
 							</div>
 							<p className="text-2xl font-Gilroy w-full text-center md:text-left ">Title 6</p>
-							<p className="w-full text-center md:text-left">
+							<p className="w-full text-center md:text-left font-ProductSans text-gray-700">
 								I found myself particulary interested in designing, prototyping,
 								and making mockup designs that helped me pursue and become a
 								good Website Developer.	

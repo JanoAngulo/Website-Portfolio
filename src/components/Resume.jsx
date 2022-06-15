@@ -5,7 +5,7 @@ import CV from "../assets/John_Russel_L._Angulo_CV.pdf";
 
 const Resume = () => {
 	return (
-		<div className="w-full px-14 " id="Resume">
+		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5" id="Resume">
 			<div className="pb-10 md:pb-0">
 				<motion.div
 					initial={{y: 40}}
@@ -76,11 +76,11 @@ const Resume = () => {
 						<div className="flex place-items-center justify-items-center pt-5">
 
 							<div className="hidden lg:flex">
-								<div className="w-5 h-5 rounded-full bg-[#dadde4] flex place-content-center place-items-center justify-items-center ">
+								<div className="w-5 h-5 rounded-full bg-[#ffca26] flex place-content-center place-items-center justify-items-center ">
 									<div className="w-3 h-3 rounded-full bg-[white]"></div>
 								</div>
 							</div>
-							<div className="border-2 w-[2vh] border-[#dadde4] hidden lg:flex"></div>
+							<div className="border-2 w-[2vh] border-[#ffca26] hidden lg:flex"></div>
 
 							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
 								<div className="px-6 py-4 w-full">
@@ -104,7 +104,7 @@ const Resume = () => {
 
 
 									<div className="h-[2vh]">
-										<div className="border-b-4 mt-3 border-[#e6e7ec]" />
+										<div className="border-b-4 mt-3 border-[#ffca26]" />
 									</div>
 									
 									<p className="font-ProductSans
@@ -121,11 +121,11 @@ const Resume = () => {
 						<div className="flex place-items-center justify-items-center py-4">
 							
 							<div className="hidden lg:flex">
-								<div className="w-5 h-5 rounded-full bg-[#dadde4] flex place-content-center place-items-center justify-items-center ">
+								<div className="w-5 h-5 rounded-full bg-[#ffca26] flex place-content-center place-items-center justify-items-center ">
 									<div className="w-3 h-3 rounded-full bg-[white]"></div>
 								</div>
 							</div>
-							<div className="border-2 w-[2vh] border-[#dadde4] hidden lg:flex"></div>
+							<div className="border-2 w-[2vh] border-[#ffca26] hidden lg:flex"></div>
 
 							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
 								<div className="px-6 py-4 w-full">
@@ -149,7 +149,7 @@ const Resume = () => {
 
 
 									<div className="h-[2vh]">
-										<div className="border-b-4 mt-3 border-[#e6e7ec]" />
+										<div className="border-b-4 mt-3 border-[#ffca26]" />
 									</div>
 									<p className="font-ProductSans
 									xl:text-[16px]
@@ -196,11 +196,11 @@ const Resume = () => {
 						<div className="flex place-items-center justify-items-center pt-5">
 							
 							<div className="hidden lg:flex">
-								<div className="w-5 h-5 rounded-full bg-[#dadde4] flex place-content-center place-items-center justify-items-center ">
-									<div className="w-3 h-3 rounded-full bg-[white]"></div>
+								<div className="w-5 h-5 rounded-full bg-[#ffca26] flex place-content-center place-items-center justify-items-center ">
+									<div className="w-3 h-3 rounded-full bg-white"></div>
 								</div>
 							</div>
-							<div className="border-2 w-[2vh] border-[#dadde4] hidden lg:flex"></div>
+							<div className="border-2 w-[2vh] border-[#ffca26] hidden lg:flex"></div>
 
 							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex">
 								<div className="p-7 w-full">
@@ -221,13 +221,13 @@ const Resume = () => {
 
 									<p className="font-ProductSans"></p>
 									<div className="h-[2vh]">
-										<div className="border-b-4 mt-3 border-[#e6e7ec]" />
+										<div className="border-b-4 mt-3 border-[#ffca26] " />
 									</div>
 									<p className="font-ProductSans
 									xl:text-[16px]
 									2xl:text-base">
 										Editing 2D motion graphics, Commercials, Timeline Video, and
-										Interview/Testimonialvideos.{" "}
+										Interview / Testimonialvideos.{" "}
 									</p>
 								</div>
 							</div>
