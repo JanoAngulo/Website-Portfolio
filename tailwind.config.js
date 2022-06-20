@@ -7,11 +7,9 @@ module.exports = {
     extend: {
       fontFamily:{
         Bebas: "Bebas",
-        BDreams: "BDreams",
         Gilroy: "Gilroy",
-        Gemstone: "Gemstone",
         ProductSans: "ProductSans",
-        Evogria: "Evogria"
+
       }
     },
   },

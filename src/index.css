@@ -3,28 +3,43 @@
 @tailwind utilities;
 
 @layer base {
+
 	@font-face {
-		font-family: "Bebas";
-		src: url("/public/Fonts/BebasNeue-Regular.woff2") format("woff2");
-	}
+    font-family: 'Gilroy';
+    src: url('/public/Fonts/Gilroy/Gilroy-Bold.eot');
+    src: url('/public/Fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/public/Fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('/public/Fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+        url('/public/Fonts/Gilroy/Gilroy-Bold.ttf') format('truetype'),
+        url('/public/Fonts/Gilroy/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('/public/Fonts/BebasNeue/BebasNeue-Regular.eot');
+    src: url('/public/Fonts/BebasNeue/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/public/Fonts/BebasNeue/BebasNeue-Regular.woff2') format('woff2'),
+        url('/public/Fonts/BebasNeue/BebasNeue-Regular.woff') format('woff'),
+        url('/public/Fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype'),
+        url('/public/Fonts/BebasNeue/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 	@font-face {
-		font-family: "BDreams";
-		src: url("/public/Fonts/BillionDreams.woff2") format("woff2");
-	}
-	@font-face {
-		font-family: "Gilroy";
-		src: url("/public/Fonts/Gilroy-Bold.woff2") format("woff2");
-	}
-	@font-face {
-		font-family: "Gemstone";
-		src: url("/public/Fonts/Gemstone-Regular.woff2") format("woff2");
-	}
-	@font-face {
-		font-family: "ProductSans";
-		src: url("/public/Fonts/ProductSansRegular.ttf") format("ttf");
-	}
-	@font-face {
-		font-family: "Evogria";
-		src: url("/public/Fonts/Evogria.otf") format("otf");
-	}
+    font-family: 'ProductSans';
+    src: url('/public/Fonts/ProductSans/ProductSans-Regular.eot');
+    src: url('/public/Fonts/ProductSans/ProductSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/public/Fonts/ProductSans/ProductSans-Regular.woff2') format('woff2'),
+        url('/public/Fonts/ProductSans/ProductSans-Regular.woff') format('woff'),
+        url('/public/Fonts/ProductSans/ProductSans-Regular.ttf') format('truetype'),
+        url('/public/Fonts/ProductSans/ProductSans-Regular.svg#ProductSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 }
