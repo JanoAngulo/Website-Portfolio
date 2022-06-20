@@ -59,27 +59,27 @@ accumsan sit amet ac eros. Etiam lacus ante, sollicitudin
 vel massa quis, scelerisque ullamcorper metus.`
 
 let CardURL = [
-  "https://youtu.be/rTSinWdl-GA",
-  "https://www.youtube.com/watch?v=l1WEXk7R65A",
-  "https://www.youtube.com/watch?v=H7cIkLZH8UA&t=5s",
-  "https://youtu.be/rTSinWdl-GA",
-  "https://youtu.be/rTSinWdl-GA",
-  "https://youtu.be/rTSinWdl-GA",
-  "https://youtu.be/rTSinWdl-GA",
-  "https://youtu.be/rTSinWdl-GA",
-  "https://youtu.be/rTSinWdl-GA"
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA",
+  "https://www.behance.net/JRLA"
 ];
 
 let CardData = [
-  ["Card Feature1", "Card Title1", P1],
-  ["Card Feature2", "Card Title2", P2],
-  ["Card Feature3", "Card Title3", P3],
-  ["Card Feature4", "Card Title4", P4],
-  ["Card Feature5", "Card Title5", P5],
-  ["Card Feature6", "Card Title6", P6],
-  ["Card Feature6", "Card Title6", P6],
-  ["Card Feature6", "Card Title6", P6],
-  ["Card Feature6", "Card Title6", P6]
+  ["Card Feature1", "Card Title 1", P1],
+  ["Card Feature2", "Card Title 2", P2],
+  ["Card Feature3", "Card Title 3", P3],
+  ["Card Feature4", "Card Title 4", P4],
+  ["Card Feature5", "Card Title 5", P5],
+  ["Card Feature6", "Card Title 6", P6],
+  ["Card Feature6", "Card Title 7", P6],
+  ["Card Feature6", "Card Title 8", P6],
+  ["Card Feature6", "Card Title 9", P6]
 ];
 
 
