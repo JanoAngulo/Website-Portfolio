@@ -114,7 +114,7 @@ const Contact = () => {
                 md:text-left"
 									>
 										<div className="2xl:flex xl:flex lg:grid md:flex text-center"> <span className="font-bold">Phone:</span> 										
-                    <div className="xl:pl-1">+639997675971
+                    <div className="xl:pl-1">(+63) 9997675971
                     </div>
                     </div>
 
@@ -219,24 +219,25 @@ const Contact = () => {
 							<div className="p-[5%] h-full ">
 								<div className="w-full">
 
-									<form action="#" className="font-ProductSans">
+									<form action="https://formsubmit.co/Angulo.johnrussel.l.7814@gmail.com" method="POST" className="font-ProductSans">
+										
 										<div className="grid">
-
-											<div className="grid grid-cols-6 gap-4">
+										<input type="hidden" name="_template" value="table"/>
+											<div className="grid md:grid-cols-6 gap-4 grid-cols-4">
 												<div className="col-span-4">
 													<label className="text-lg">
 														Your Name:
 														<input className="w-full h-12 p-3 focus:outline-none focus:ring focus:ring-[#ff3656] shadow-lg my-3 rounded-lg
-                            lg:text-base" type="text" name="name" />
+                            lg:text-base" type="text" name="Name" required/>
 													</label>
 												</div>
 
-												<div className="col-span-2">
+												<div className="md:col-span-2 col-span-4">
 													<label className="text-lg">
 														Phone Number:
 														<input className="w-full h-12 text-lg p-3 focus:outline-none focus:ring focus:ring-[#ff3656] shadow-lg my-3 rounded-lg
                             lg:text-base"
-                             type="phone" name="phone" />
+                             type="phone" name="Contact Number" required/>
 													</label>
 												</div>
 											</div>
@@ -245,7 +246,7 @@ const Contact = () => {
 												<label className="text-lg">
 													Email Address:
 													<input className="w-full h-12 text-lg p-3 focus:outline-none focus:ring focus:ring-[#ff3656] shadow-lg my-3 rounded-lg
-                          lg:text-base" type="email" name="email" />
+                          lg:text-base" type="email" name="Email Address" required/>
 												</label>
 											</div>
 
@@ -254,7 +255,7 @@ const Contact = () => {
 													Subject:
 													<input className="w-full h-12 text-lg p-3 focus:outline-none focus:ring focus:ring-[#ff3656]
                           shadow-lg my-3 rounded-lg
-                          lg:text-base" type="subject" name="subject" />
+                          lg:text-base" type="subject" name="Subject" required/>
 												</label>
 											</div>
 
@@ -266,7 +267,7 @@ const Contact = () => {
                           lg:h-[10.5vh]
                           xl:h-[11vh]
                           2xl:h-[14vh]
-                          " type="text" name="name" />
+                          " type="text" name="Message" required/>
 												</label>
 											</div>
 
