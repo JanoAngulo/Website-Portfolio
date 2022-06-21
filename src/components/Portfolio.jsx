@@ -45,7 +45,8 @@ const Portfolio = () => {
 						h-[90%]"
 				>
 					<div className="p-[5%] h-full ">
-						<img
+						<motion.img
+						whileHover={{scale: 1.02}}
 							src={Images[index - 1].src}
 							id={"Card" + index + "-img"}
 							onClick={() => {
@@ -58,7 +59,7 @@ const Portfolio = () => {
 							lg:h-[15rem]
 							xl:h-[15rem]
 							2xl:h-[20rem]"
-						></img>
+						></motion.img>
 						<p className="hidden" id={"Card" + index + "-Feature"}>
 							{CardData[index - 1][0]}
 						</p>
@@ -128,6 +129,7 @@ const Portfolio = () => {
 								</div>
 
 								<img
+									
 									id="ModalImg"
 									className="rounded-xl bg-slate-200 w-full mt-10 md:mt-0
 									2xl:h-[30rem]
