@@ -1,13 +1,30 @@
 import React from "react";
 import {motion} from "framer-motion";
 
+let Variants, FeatureVariants = {};
+const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
+if (!isMobile) {
+	Variants = {
+		initial: {x: -40},
+		whileInView: {x: 0},
+		viewport: {once: false},
+	};
+
+	FeatureVariants = {
+		initialFeature: {y: 50},
+		whileInViewFeature: {y: 0},
+		viewportFeature: {once: false}
+	};
+}
+
 const Features = () => {
 	return (
 		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5 " id="Features">
 			<motion.div
-				initial={{x: -40}}
-				whileInView={{x: 0}}
-				viewport={{once: false}}
+				variants={Variants}
+				initial="initial"
+				whileInView="whileInView"
+				viewport="viewport"
 				transition={{duration: 0.8}}
 				className="font-Gilroy text-[#ff3656] text-lg
 				text-center
@@ -17,9 +34,10 @@ const Features = () => {
 			</motion.div>
 
 			<motion.div
-				initial={{x: -40}}
-				whileInView={{x: 0}}
-				viewport={{once: false}}
+				variants={Variants}
+				initial="initial"
+				whileInView="whileInView"
+				viewport="viewport"
 				transition={{duration: 1}}
 				className="font-Gilroy text-black font-semibold py-3 
 				text-center
@@ -45,15 +63,15 @@ const Features = () => {
 				2xl:px-0">
 
 				<motion.div 
-					initial={{y: 50}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					FeatureVariants = {FeatureVariants}
+					initial= "initialFeature"
+					whileInView= "whileInViewFeature"
+					viewport= "viewportFeature"
 					transition={{duration: 0.7}}
 					className="h-full">
 
 					<motion.div
 						whileHover={{y: -10}}
-						// whileTap={{scale: 0.9}}
 						className="grid w-full place-items-center justify-center hover:bg-[#ff3656] hover:text-white bg-[#f5f7fa] drop-shadow-xl rounded-2xl">
 						<div className="grid p-5">
 							<i className="fa-solid fa-laptop-code text-5xl 
@@ -88,9 +106,10 @@ const Features = () => {
 				</motion.div>
 
 				<motion.div 
-					initial={{y: 50}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					FeatureVariants = {FeatureVariants}
+					initial= "initialFeature"
+					whileInView= "whileInViewFeature"
+					viewport= "viewportFeature"
 					transition={{duration: 0.8}}
 					className="h-full">
 
@@ -131,9 +150,10 @@ const Features = () => {
 				</motion.div>
 
 				<motion.div 
-					initial={{y: 50}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					FeatureVariants = {FeatureVariants}
+					initial= "initialFeature"
+					whileInView= "whileInViewFeature"
+					viewport= "viewportFeature"
 					transition={{duration: 0.9}}
 					className="h-full">
 

@@ -3,15 +3,32 @@ import {motion} from "framer-motion";
 import HS1 from "../assets/HandShake1.jpg";
 import HS2 from "../assets/HandShake2.jpg";
 
+let Variants, VariantsInfo = {};
+const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
+if (!isMobile) {
+	Variants = {
+		initial: {y: 40},
+		whileInView: {y: 0},
+		viewport: {once: false},
+	};
+
+	VariantsInfo = {
+		initialInfo: {y: 50},
+		whileInViewInfo: {y: 0},
+		viewportInfo: {once: false},
+	}
+}
+
 const Contact = () => {
 	return (
 		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5 pb-16" id="Contact">
 			<div className="py-10 md:pb-0">
 
 				<motion.div
-					initial={{y: 40}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					Variants = {Variants}
+					initial= "initial"
+					whileInView= "whileInView"
+					viewport= "viewport"
 					transition={{duration: 0.8}}
 					className="font-Gilroy text-lg text-[#ff3656] text-center uppercase"
 				>
@@ -19,9 +36,10 @@ const Contact = () => {
 				</motion.div>
 
 				<motion.div
-					initial={{y: 40}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					Variants = {Variants}
+					initial= "initial"
+					whileInView= "whileInView"
+					viewport= "viewport"
 					transition={{duration: 1}}
 					className="font-Gilroy text-black font-semibold py-3 text-5xl md:text-7xl mb-4 md:mb-12 text-center"
 				>
@@ -41,9 +59,10 @@ const Contact = () => {
 
 				<div>
 					<motion.div
-						initial={{y: 50}}
-						whileInView={{y: 0}}
-						viewport={{once: false}}
+						Variants = {VariantsInfo}
+						initial= "initialInfo"
+						whileInView= "whileInViewInfo"
+						viewport= "viewportInfo"
 						transition={{duration: 0.7}}
 					>
 						<motion.div
@@ -205,9 +224,10 @@ const Contact = () => {
 
 				<div className="col-span-2">
 					<motion.div
-						initial={{y: 50}}
-						whileInView={{y: 0}}
-						viewport={{once: false}}
+						Variants = {VariantsInfo}
+						initial= "initialInfo"
+						whileInView= "whileInViewInfo"
+						viewport= "viewportInfo"
 						transition={{duration: 0.7}}
 					>
 						<motion.div

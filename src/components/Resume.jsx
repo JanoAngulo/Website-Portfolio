@@ -3,14 +3,25 @@ import {motion} from "framer-motion";
 import JRLA from "../assets/JRLA-Resume.png";
 import CV from "../assets/John_Russel_L._Angulo_CV.pdf";
 
+let Variants = {};
+const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
+if (!isMobile) {
+	Variants = {
+		initial: {y: 40},
+		whileInView: {y: 0},
+		viewport: {once: false},
+	};
+}
+
 const Resume = () => {
 	return (
 		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5" id="Resume">
 			<div className="pb-10 md:pb-0">
 				<motion.div
-					initial={{y: 40}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					Variants = {Variants}
+					initial= "initial"
+					whileInView= "whileInView"
+					viewport= "viewport"
 					transition={{duration: 0.8}}
 					className="font-Gilroy text-lg text-[#ff3656] text-center uppercase"
 				>
@@ -18,9 +29,10 @@ const Resume = () => {
 				</motion.div>
 
 				<motion.div
-					initial={{y: 40}}
-					whileInView={{y: 0}}
-					viewport={{once: false}}
+					Variants = {Variants}
+					initial= "initial"
+					whileInView= "whileInView"
+					viewport= "viewport"
 					transition={{duration: 1}}
 					className="font-Gilroy text-black font-semibold py-3 text-5xl md:text-7xl mb-4 md:mb-12 text-center"
 				>

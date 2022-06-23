@@ -24,6 +24,22 @@ const Portfolio = () => {
 		const Modal = document.getElementById("Modal");
 		Modal.style.display = "none";
 	}
+	
+	let Variants, VariantsPortfolio = {};
+const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
+if (!isMobile) {
+	Variants = {
+		initial: {x: -40},
+		whileInView: {x: 0},
+		viewport: {once: false},
+	};
+
+	VariantsPortfolio = {
+		initialText: {y: 40},
+		whileInViewText: {y: 0},
+		viewportText: {once: false}
+	}
+}
 
 	let Cards = [];
 
@@ -31,9 +47,10 @@ const Portfolio = () => {
 		Cards.push(
 			<motion.div
 				id={"Card" + index}
-				initial={{y: 50}}
-				whileInView={{y: 0}}
-				viewport={{once: false}}
+				Variants = {Variants}
+				initial= "initial"
+				whileInView= "whileInView"
+				viewport= "viewport"
 				transition={{duration: 0.7}}
 			>
 				<motion.div
@@ -52,7 +69,7 @@ const Portfolio = () => {
 							onClick={() => {
 								openModal("Card" + index, CardURL[index-1]);
 							}}
-							className="rounded-xl bg-slate-200 mb-4
+							className="rounded-xl mb-4
 							w-full
 							h-[10rem]
 							md:h-[20rem]
@@ -63,6 +80,7 @@ const Portfolio = () => {
 						<p className="hidden" id={"Card" + index + "-Feature"}>
 							{CardData[index - 1][0]}
 						</p>
+						
 						<p
 							className="text-2xl font-Gilroy w-full text-center md:text-left"
 							id={"Card" + index + "-Title"}
@@ -70,7 +88,7 @@ const Portfolio = () => {
 							{CardData[index - 1][1]}
 						</p>
 						<p
-							className="w-full text-center md:text-left font-ProductSans text-gray-700"
+							className="w-full h-24 text-justify md:text-left font-ProductSans text-clip overflow-hidden text-gray-700"
 							id={"Card" + index + "-Paragraph"}
 						>
 							{CardData[index - 1][2]}
@@ -87,9 +105,10 @@ const Portfolio = () => {
 			id="Portfolio"
 		>
 			<motion.div
-				initial={{y: 40}}
-				whileInView={{y: 0}}
-				viewport={{once: false}}
+				Variants= {VariantsPortfolio}
+				initial= "initialText"
+				whileInView= "whileInViewText"
+				viewport= "viewportText"
 				transition={{duration: 0.8}}
 				className="font-Gilroy text-lg text-[#ff3656] text-center uppercase"
 			>
@@ -97,9 +116,10 @@ const Portfolio = () => {
 			</motion.div>
 
 			<motion.div
-				initial={{y: 40}}
-				whileInView={{y: 0}}
-				viewport={{once: false}}
+				Variants= {VariantsPortfolio}
+				initial= "initialText"
+				whileInView= "whileInViewText"
+				viewport= "viewportText"
 				transition={{duration: 1}}
 				className="font-Gilroy text-black font-semibold py-3 text-5xl md:text-7xl mb-4 md:mb-12 text-center"
 				id="test-target"
@@ -127,11 +147,11 @@ const Portfolio = () => {
 										<i class="fa-solid fa-xmark pt-1"></i>
 									</motion.button>
 								</div>
-
+									
 								<img
 									
 									id="ModalImg"
-									className="rounded-xl bg-slate-200 w-full mt-10 md:mt-0
+									className="rounded-xl w-full mt-10 md:mt-0
 									2xl:h-[30rem]
 									xl:h-[30rem]
 									lg:h-[20rem]
@@ -139,16 +159,17 @@ const Portfolio = () => {
 									h-[10rem]"
 								></img>
 
-								<div className="w-[90%]">
+								<div className="md:w-[90%] w-full">
 									<p
-										className="text-xl font-ProductSans leading-6 text-gray-900 py-4"
+										className=" text-xl font-ProductSans leading-6 text-gray-900 py-1 text-center md:text-left"
 										id="ModalFeature"
 									>
 										{" "}
 										Featured - Design{" "}
 									</p>
+
 									<p
-										className="ModalTitle1 text-5xl font-Gilroy leading-6 text-gray-900 py-4"
+										className="ModalTitle1 text-5xl font-Gilroy leading-6 text-gray-900 py-4 text-center md:text-left"
 										id="ModalTitle"
 									>
 										Featured Title 
@@ -156,7 +177,7 @@ const Portfolio = () => {
 
 									<div className="py-4 w-full">
 										<p
-											className="ModalParagraph1 text-base text-gray-700 font-ProductSans"
+											className="ModalParagraph1 text-base text-gray-700 font-ProductSans text-justify md:text-left"
 											id="ModalParagraph"
 										>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -170,11 +191,13 @@ const Portfolio = () => {
 										</p>
 									</div>
 
+									<div className="bottom-0 z-11 absolue">
 									<button 
 									id="ModalBtn"
-									className="font-ProductSans text-base bg-[#ff3656] hover:bg-[#ffca26] rounded-lg h-10 w-full shadow-lg text-white hover:text-black">
+									className="font-ProductSans text-base items-end bg-[#ff3656] hover:bg-[#ffca26] rounded-lg h-10 w-full shadow-lg text-white hover:text-black">
 									View Project
 									</button>
+									</div>
 								</div>
 							</div>
 						</div>

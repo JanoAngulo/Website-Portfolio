@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Link} from "react-scroll";
 import {motion} from "framer-motion";
 
+
 const Navbar = () => {
 
   let [open, setOpen] = useState(false);
