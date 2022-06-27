@@ -16,9 +16,8 @@ if (!isMobile) {
 	ImgVariant = {
 		initialImg: {x: -40, opacity: 1},
 		whileInViewImg: {x: 0},
-		viewportImg: {once: false}
-
-	}
+		viewportImg: {once: false},
+	};
 }
 
 const Main = () => {
@@ -36,7 +35,7 @@ const Main = () => {
 				<div>
 					<div className="w-full px-14 pt-[15%]">
 						<motion.div
-							Variants={Variants}
+							variants={Variants}
 							initial= "initial"
 							whileInView= "whileInView"
 							viewport= "viewport"
@@ -54,7 +53,7 @@ const Main = () => {
 						</motion.div>
 
 						<motion.p
-							Variants={Variants}
+							variants={Variants}
 							initial= "initial"
 							whileInView= "whileInView"
 							viewport= "viewport"
@@ -74,7 +73,7 @@ const Main = () => {
 						</motion.p>
 
 						<motion.p
-							Variants={Variants}
+							variants={Variants}
 							initial= "initial"
 							whileInView= "whileInView"
 							viewport= "viewport"
@@ -127,7 +126,7 @@ const Main = () => {
 						</motion.p>
 
 						<motion.div
-							Variants={Variants}
+							variants={Variants}
 							initial= "initial"
 							whileInView= "whileInView"
 							viewport= "viewport"
@@ -167,7 +166,7 @@ const Main = () => {
 						xl:grid"
 						>
 							<motion.div
-							Variants={Variants}
+							variants={Variants}
 							initial= "initial"
 							whileInView= "whileInView"
 							viewport= "viewport"
@@ -190,7 +189,7 @@ const Main = () => {
 						xl:grid"
 						>
 							<motion.div
-							Variants={Variants}
+							variants={Variants}
 							initial= "initial"
 							whileInView= "whileInView"
 							viewport= "viewport"
@@ -239,7 +238,7 @@ const Main = () => {
 
 				<div className="w-full h-full grid place-items-center">
 					<motion.div
-						Variants={ImgVariant}
+						variants={ImgVariant}
 						initial="initialImg"
 						whileInView="whileInViewImg"
 						viewport="viewportImg"
@@ -269,7 +268,7 @@ const Main = () => {
 
 			<div className=" font-Gilroy mb-16 grid place-items-center">
 				<motion.div
-					Variants={Variants}
+					variants={Variants}
 					initial= "initial"
 					whileInView= "whileInView"
 					viewport= "viewport"
@@ -284,7 +283,7 @@ const Main = () => {
 				</motion.div>
 
 				<motion.div
-					Variants={Variants}
+					variants={Variants}
 					initial= "initial"
 					whileInView= "whileInView"
 					viewport= "viewport"

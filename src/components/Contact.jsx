@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 import HS1 from "../assets/HandShake1.jpg";
 import HS2 from "../assets/HandShake2.jpg";
 
-let Variants, VariantsInfo = {};
+let Variants, VariantsInfo, VariantsInfo2 = {};
 const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
 if (!isMobile) {
 	Variants = {
@@ -13,10 +13,16 @@ if (!isMobile) {
 	};
 
 	VariantsInfo = {
-		initialInfo: {y: 50},
-		whileInViewInfo: {y: 0},
+		initialInfo: {x: -50},
+		whileInViewInfo: {x: 0},
 		viewportInfo: {once: false},
-	}
+	};
+
+	VariantsInfo2 = {
+		initialInfo: {x: 50},
+		whileInViewInfo: {x: 0},
+		viewportInfo: {once: false},
+	};
 }
 
 const Contact = () => {
@@ -25,7 +31,7 @@ const Contact = () => {
 			<div className="py-10 md:pb-0">
 
 				<motion.div
-					Variants = {Variants}
+					variants = {Variants}
 					initial= "initial"
 					whileInView= "whileInView"
 					viewport= "viewport"
@@ -36,7 +42,7 @@ const Contact = () => {
 				</motion.div>
 
 				<motion.div
-					Variants = {Variants}
+					variants = {Variants}
 					initial= "initial"
 					whileInView= "whileInView"
 					viewport= "viewport"
@@ -59,7 +65,7 @@ const Contact = () => {
 
 				<div>
 					<motion.div
-						Variants = {VariantsInfo}
+						variants = {VariantsInfo}
 						initial= "initialInfo"
 						whileInView= "whileInViewInfo"
 						viewport= "viewportInfo"
@@ -132,7 +138,7 @@ const Contact = () => {
                 text-center
                 md:text-left"
 									>
-										<div className="2xl:flex xl:flex lg:grid md:flex text-center"> <span className="font-bold">Phone:</span> 										
+										<div className="2xl:flex xl:flex lg:grid md:flex text-center"> <span className="font-bold">Phone:&nbsp;</span> 										
                     <div className="xl:pl-1">(+63) 9997675971
                     </div>
                     </div>
@@ -140,6 +146,9 @@ const Contact = () => {
 									</p>
 
 									<p className="w-full font-ProductSans
+										2xl:justify-start
+										xl:justify-start
+										lg:justify-center
                     pb-3
                     md:py-0
                     lg:py-0
@@ -147,9 +156,11 @@ const Contact = () => {
                     md:flex
                     grid-cols-1
                     md:grid-cols-2
-                    md:text-left">
-										<div className="2xl:flex xl:flex lg:grid md:flex text-center"> <span className="font-bold w-full">Email:</span> 
-                    <div className="2xl:text-base xl:text-base lg:text-[14.5px] text-sm xl:pl-1 w-full">
+                    md:text-left
+										">
+										<div className="2xl:flex xl:flex lg:grid md:flex text-center"> <span className="font-bold w-full">Email:&nbsp; 
+										</span>
+                    <div className="2xl:text-base xl:text-base lg:text-[14.5px] md:text-[20px] text-sm xl:pl-1 w-full">
 											Angulo.johnrussel.l.7814@gmail.com
 										</div>
                     </div>
@@ -160,7 +171,7 @@ const Contact = () => {
 										className="py-4 text-zinc-700 uppercase font-Gilroy
                     text-center
                     md:text-left
-                    lg:text-left
+                    lg:text-center
                     lg:text-base"
 									>
 										Here are my social links
@@ -171,6 +182,7 @@ const Contact = () => {
                 grid
                 justify-center
                 md:justify-start
+								lg:justify-center
                 w-full
                 lg:grid
                 xl:grid"
@@ -224,7 +236,7 @@ const Contact = () => {
 
 				<div className="col-span-2">
 					<motion.div
-						Variants = {VariantsInfo}
+						variants = {VariantsInfo2}
 						initial= "initialInfo"
 						whileInView= "whileInViewInfo"
 						viewport= "viewportInfo"

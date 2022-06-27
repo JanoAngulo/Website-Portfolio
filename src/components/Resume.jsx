@@ -18,7 +18,7 @@ const Resume = () => {
 		<div className="w-full 2xl:px-14 xl:px-14 lg:px-5 md:px-5 px-5" id="Resume">
 			<div className="pb-10 md:pb-0">
 				<motion.div
-					Variants = {Variants}
+					variants = {Variants}
 					initial= "initial"
 					whileInView= "whileInView"
 					viewport= "viewport"
@@ -29,7 +29,7 @@ const Resume = () => {
 				</motion.div>
 
 				<motion.div
-					Variants = {Variants}
+					variants = {Variants}
 					initial= "initial"
 					whileInView= "whileInView"
 					viewport= "viewport"

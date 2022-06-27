@@ -29,16 +29,16 @@ const Portfolio = () => {
 const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
 if (!isMobile) {
 	Variants = {
-		initial: {x: -40},
-		whileInView: {x: 0},
+		initial: {y: 40},
+		whileInView: {y: 0},
 		viewport: {once: false},
 	};
 
 	VariantsPortfolio = {
 		initialText: {y: 40},
 		whileInViewText: {y: 0},
-		viewportText: {once: false}
-	}
+		viewportText: {once: false},
+	};
 }
 
 	let Cards = [];
@@ -47,7 +47,7 @@ if (!isMobile) {
 		Cards.push(
 			<motion.div
 				id={"Card" + index}
-				Variants = {Variants}
+				variants = {Variants}
 				initial= "initial"
 				whileInView= "whileInView"
 				viewport= "viewport"
@@ -105,7 +105,7 @@ if (!isMobile) {
 			id="Portfolio"
 		>
 			<motion.div
-				Variants= {VariantsPortfolio}
+				variants= {VariantsPortfolio}
 				initial= "initialText"
 				whileInView= "whileInViewText"
 				viewport= "viewportText"
@@ -116,7 +116,7 @@ if (!isMobile) {
 			</motion.div>
 
 			<motion.div
-				Variants= {VariantsPortfolio}
+				variants= {VariantsPortfolio}
 				initial= "initialText"
 				whileInView= "whileInViewText"
 				viewport= "viewportText"

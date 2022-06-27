@@ -13,7 +13,7 @@ if (!isMobile) {
 	FeatureVariants = {
 		initialFeature: {y: 50},
 		whileInViewFeature: {y: 0},
-		viewportFeature: {once: false}
+		viewportFeature: {once: false},
 	};
 }
 
@@ -63,7 +63,7 @@ const Features = () => {
 				2xl:px-0">
 
 				<motion.div 
-					FeatureVariants = {FeatureVariants}
+					variants = {FeatureVariants}
 					initial= "initialFeature"
 					whileInView= "whileInViewFeature"
 					viewport= "viewportFeature"
@@ -106,7 +106,7 @@ const Features = () => {
 				</motion.div>
 
 				<motion.div 
-					FeatureVariants = {FeatureVariants}
+					variants = {FeatureVariants}
 					initial= "initialFeature"
 					whileInView= "whileInViewFeature"
 					viewport= "viewportFeature"
@@ -150,7 +150,7 @@ const Features = () => {
 				</motion.div>
 
 				<motion.div 
-					FeatureVariants = {FeatureVariants}
+					variants = {FeatureVariants}
 					initial= "initialFeature"
 					whileInView= "whileInViewFeature"
 					viewport= "viewportFeature"
