@@ -55,13 +55,9 @@ if (!isMobile) {
 			>
 				<motion.div
 					whileHover={{y: -10}}
-					className="grid w-full place-items-center justify-center text-black bg-[#f5f7fa] drop-shadow-xl rounded-2xl
-						md:w-full
-						lg:w-full
-						xl:w-full
-						h-[90%]"
+					className="grid w-full place-items-center justify-center text-black bg-[#f5f7fa] drop-shadow-xl rounded-2xl"
 				>
-					<div className="p-[5%] h-full ">
+					<div className="p-[5%] h-auto ">
 						<motion.img
 						whileHover={{scale: 1.02}}
 							src={Images[index - 1].src}
@@ -69,14 +65,9 @@ if (!isMobile) {
 							onClick={() => {
 								openModal("Card" + index, CardURL[index-1]);
 							}}
-							className="rounded-xl mb-4
-							w-full
-							h-[10rem]
-							md:h-[20rem]
-							lg:h-[15rem]
-							xl:h-[15rem]
-							2xl:h-[20rem]"
+							className="Img-data rounded-xl mb-4 w-auto "
 						></motion.img>
+
 						<p className="hidden" id={"Card" + index + "-Feature"}>
 							{CardData[index - 1][0]}
 						</p>
@@ -87,11 +78,13 @@ if (!isMobile) {
 						>
 							{CardData[index - 1][1]}
 						</p>
+						
 						<p
-							className="w-full h-24 text-justify md:text-left font-ProductSans text-clip overflow-hidden text-gray-700"
+							className="w-full h-24 text-justify md:text-left font-ProductSans overflow-hidden text-ellipsis  text-gray-700"
 							id={"Card" + index + "-Paragraph"}
 						>
 							{CardData[index - 1][2]}
+
 						</p>
 					</div>
 				</motion.div>
@@ -133,10 +126,15 @@ if (!isMobile) {
 				<div className="fixed inset-0 overflow-y-auto">
 					<div className="flex min-h-full items-center justify-center p-4 text-center">
 						<div
-							className="w-full h-full max-w-5xl transform overflow-hidden rounded-2xl bg-[#f5f7fa] p-6 text-left
-								align-middle shadow-xl transition-all"
+							className="w-full h-full mt-24 transform overflow-hidden rounded-2xl bg-[#f5f7fa] p-6 text-left
+								align-middle shadow-xl transition-all
+								2xl:max-w-6xl
+								xl:max-w-6xl
+								lg:max-w-3xl
+								md:max-w-xl
+								"
 						>
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+							<div className="grid grid-cols-1 lg:grid-cols-2  gap-4 place-items-center ">
 								<div className="grid right-7 top-3 z-10 absolute">
 									<motion.button
 										whileHover={{y: -3}}
@@ -149,19 +147,15 @@ if (!isMobile) {
 								</div>
 									
 								<img
-									
 									id="ModalImg"
-									className="rounded-xl w-full mt-10 md:mt-0
-									2xl:h-[30rem]
-									xl:h-[30rem]
-									lg:h-[20rem]
-									md:h-full
-									h-[10rem]"
+									className="rounded-xl w-full mt-10 md:mt-0 grid "
 								></img>
 
 								<div className="md:w-[90%] w-full">
 									<p
-										className=" text-xl font-ProductSans leading-6 text-gray-900 py-1 text-center md:text-left"
+										className=" font-ProductSans leading-6 text-gray-900 py-2 text-center lg:text-left
+										text-lg
+										"
 										id="ModalFeature"
 									>
 										{" "}
@@ -169,25 +163,29 @@ if (!isMobile) {
 									</p>
 
 									<p
-										className="ModalTitle1 text-5xl font-Gilroy leading-6 text-gray-900 py-4 text-center md:text-left"
+										className="ModalTitle1 font-Gilroy text-gray-900 text-center lg:text-left
+										text-xl 
+										2xl:text-4xl
+										xl:text-4xl
+										lg:text-2xl"
 										id="ModalTitle"
 									>
 										Featured Title 
 									</p>
 
-									<div className="py-4 w-full">
+									<div className="py-2 w-full">
 										<p
-											className="ModalParagraph1 text-base text-gray-700 font-ProductSans text-justify md:text-left"
+											className="ModalParagraph1 whitespace-pre-wrap indent-5 text-gray-700 font-ProductSans text-justify md:text-left
+											2xl:text-base
+											xl:text-base
+											lg:text-sm
+											text:base"
 											id="ModalParagraph"
 										>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 											Curabitur ac nisl urna. Donec vel nulla at orci euismod
 											accumsan sit amet ac eros. Etiam lacus ante, sollicitudin
-											vel massa quis, scelerisque ullamcorper metus. <br />{" "}
-											<br />
-											Vestibulum sodales tortor eget ipsum molestie
-											pellentesque. Sed eget leo id enim pellentesque congue ut
-											at eros.
+											vel massa quis, scelerisque ullamcorper metus.
 										</p>
 									</div>
 

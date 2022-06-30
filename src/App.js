@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 function App() {
 	return (
 		<div className="w-full h-full bg-[#eceff4]">
-			<div className="sticky top-0 z-[999]">
+			<div className="sticky top-0 m-0 z-[999]">
 				<Navbar />
 			</div>
 			<Main />
