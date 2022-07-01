@@ -172,6 +172,7 @@ const Contact = () => {
                     text-center
                     md:text-left
                     lg:text-center
+										xl:text-left
                     lg:text-base"
 									>
 										Here are my social links
@@ -183,6 +184,7 @@ const Contact = () => {
                 justify-center
                 md:justify-start
 								lg:justify-center
+								xl:justify-start
                 w-full
                 lg:grid
                 xl:grid"
