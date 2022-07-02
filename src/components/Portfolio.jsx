@@ -1,8 +1,11 @@
 import React, {useState, Fragment} from "react";
 import {motion} from "framer-motion";
-import {Images , CardData, CardURL} from "./Data"
+import {Images, CardData, CardURL} from "./Data";
 
 const Portfolio = () => {
+
+	const [index] = useState([]);
+
 	function openModal(CardID, CardURL) {
 		const Modal = document.getElementById("Modal");
 		console.log(CardID);
@@ -15,8 +18,10 @@ const Portfolio = () => {
 		document.getElementById("ModalFeature").innerHTML = Feature.innerHTML;
 		document.getElementById("ModalImg").src = CardIMG.src;
 		let ModalBtn = document.getElementById("ModalBtn");
-		ModalBtn.onclick = ()=>{window.open (CardURL)}
-	
+		ModalBtn.onclick = () => {
+			window.open(CardURL);
+		};
+
 		Modal.style.display = "block";
 	}
 
@@ -24,22 +29,31 @@ const Portfolio = () => {
 		const Modal = document.getElementById("Modal");
 		Modal.style.display = "none";
 	}
-	
-	let Variants, VariantsPortfolio = {};
-const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
-if (!isMobile) {
-	Variants = {
-		initial: {y: 40},
-		whileInView: {y: 0},
-		viewport: {once: false},
-	};
 
-	VariantsPortfolio = {
-		initialText: {y: 40},
-		whileInViewText: {y: 0},
-		viewportText: {once: false},
+	let Variants,
+		VariantsPortfolio = {};
+	const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)
+	if (!isMobile) {
+		Variants = {
+			initial: {y: 40},
+			whileInView: {y: 0},
+			viewport: {once: false}
+		};
+
+		VariantsPortfolio = {
+			initialText: {y: 40},
+			whileInViewText: {y: 0},
+			viewportText: {once: false}
+		};
+	}
+
+	const truncateString = (str, num) => {
+		if (str?.length > num) {
+			return str.slice(0, num) + "...";
+		} else {
+			return str;
+		}
 	};
-}
 
 	let Cards = [];
 
@@ -47,10 +61,10 @@ if (!isMobile) {
 		Cards.push(
 			<motion.div
 				id={"Card" + index}
-				variants = {Variants}
-				initial= "initial"
-				whileInView= "whileInView"
-				viewport= "viewport"
+				variants={Variants}
+				initial="initial"
+				whileInView="whileInView"
+				viewport="viewport"
 				transition={{duration: 0.7}}
 			>
 				<motion.div
@@ -59,11 +73,11 @@ if (!isMobile) {
 				>
 					<div className="p-[5%] h-auto ">
 						<motion.img
-						whileHover={{scale: 1.02}}
+							whileHover={{scale: 1.02}}
 							src={Images[index - 1].src}
 							id={"Card" + index + "-img"}
 							onClick={() => {
-								openModal("Card" + index, CardURL[index-1]);
+								openModal("Card" + index, CardURL[index - 1]);
 							}}
 							className="Img-data rounded-xl mb-4 w-auto "
 						></motion.img>
@@ -71,20 +85,17 @@ if (!isMobile) {
 						<p className="hidden" id={"Card" + index + "-Feature"}>
 							{CardData[index - 1][0]}
 						</p>
-						
+
 						<p
 							className="text-2xl font-Gilroy w-full text-center md:text-left"
 							id={"Card" + index + "-Title"}
 						>
 							{CardData[index - 1][1]}
 						</p>
-						
-						<p
-							className="w-full h-24 text-justify md:text-left font-ProductSans overflow-hidden text-ellipsis  text-gray-700"
-							id={"Card" + index + "-Paragraph"}
-						>
-							{CardData[index - 1][2]}
 
+						<p className=" w-full h-24 text-justify md:text-left font-ProductSans overflow-hidden text-ellipsis text-gray-700"
+							id={"Card" + index  +  "-Paragraph"}>
+								{CardData[index - 1][2]}
 						</p>
 					</div>
 				</motion.div>
@@ -98,10 +109,10 @@ if (!isMobile) {
 			id="Portfolio"
 		>
 			<motion.div
-				variants= {VariantsPortfolio}
-				initial= "initialText"
-				whileInView= "whileInViewText"
-				viewport= "viewportText"
+				variants={VariantsPortfolio}
+				initial="initialText"
+				whileInView="whileInViewText"
+				viewport="viewportText"
 				transition={{duration: 0.8}}
 				className="font-Gilroy text-lg text-[#ff3656] text-center uppercase"
 			>
@@ -109,10 +120,10 @@ if (!isMobile) {
 			</motion.div>
 
 			<motion.div
-				variants= {VariantsPortfolio}
-				initial= "initialText"
-				whileInView= "whileInViewText"
-				viewport= "viewportText"
+				variants={VariantsPortfolio}
+				initial="initialText"
+				whileInView="whileInViewText"
+				viewport="viewportText"
 				transition={{duration: 1}}
 				className="font-Gilroy text-black font-semibold py-3 text-5xl md:text-7xl mb-4 md:mb-12 text-center"
 				id="test-target"
@@ -145,7 +156,7 @@ if (!isMobile) {
 										<i class="fa-solid fa-xmark pt-1"></i>
 									</motion.button>
 								</div>
-									
+
 								<img
 									id="ModalImg"
 									className="rounded-xl w-full mt-10 md:mt-0 grid "
@@ -170,7 +181,7 @@ if (!isMobile) {
 										lg:text-2xl"
 										id="ModalTitle"
 									>
-										Featured Title 
+										Featured Title
 									</p>
 
 									<div className="py-2 w-full">
@@ -190,11 +201,12 @@ if (!isMobile) {
 									</div>
 
 									<div className="bottom-0 z-11 absolue">
-									<button 
-									id="ModalBtn"
-									className="font-ProductSans text-base items-end bg-[#ff3656] hover:bg-[#ffca26] rounded-lg h-10 w-full shadow-lg text-white hover:text-black">
-									View Project
-									</button>
+										<button
+											id="ModalBtn"
+											className="font-ProductSans text-base items-end bg-[#ff3656] hover:bg-[#ffca26] rounded-lg h-10 w-full shadow-lg text-white hover:text-black"
+										>
+											View Project
+										</button>
 									</div>
 								</div>
 							</div>
