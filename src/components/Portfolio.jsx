@@ -1,10 +1,10 @@
-import React, {useState, Fragment} from "react";
+import React from "react";
 import {motion} from "framer-motion";
 import {Images, CardData, CardURL} from "./Data";
 
 const Portfolio = () => {
 
-	const [index] = useState([]);
+	// const [index] = useState([]);
 
 	function openModal(CardID, CardURL) {
 		const Modal = document.getElementById("Modal");
@@ -47,17 +47,17 @@ const Portfolio = () => {
 		};
 	}
 
-	const truncateString = (str, num) => {
-		if (str?.length > num) {
-			return str.slice(0, num) + "...";
-		} else {
-			return str;
-		}
-	};
+	// const truncateString = (str, num) => {
+	// 	if (str?.length > num) {
+	// 		return str.slice(0, num) + "...";
+	// 	} else {
+	// 		return str;
+	// 	}
+	// };
 
 	let Cards = [];
 
-	for (let index = 1; index <= 9; index++) {
+	for (let index = 1; index <= 8; index++) {
 		Cards.push(
 			<motion.div
 				id={"Card" + index}
@@ -160,6 +160,7 @@ const Portfolio = () => {
 								<img
 									id="ModalImg"
 									className="rounded-xl w-full mt-10 md:mt-0 grid "
+									alt=""
 								></img>
 
 								<div className="md:w-[90%] w-full">
