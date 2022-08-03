@@ -94,7 +94,7 @@ const Resume = () => {
 							</div>
 							<div className="border-2 w-[2vh] border-[#ffca26] hidden lg:flex"></div>
 
-							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
+							<div className="w-full h-full rounded-lg ease-linear duration-200 bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
 								<div className="px-6 py-4 w-full">
 									<p className="font-Gilroy pb-3
 									text-xl
@@ -139,7 +139,7 @@ const Resume = () => {
 							</div>
 							<div className="border-2 w-[2vh] border-[#ffca26] hidden lg:flex"></div>
 
-							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
+							<div className="w-full h-full rounded-lg ease-linear duration-200 bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex place-content-center place-items-center justify-items-center ">
 								<div className="px-6 py-4 w-full">
 									<p className="font-Gilroy pb-3
 									text-xl
@@ -214,7 +214,7 @@ const Resume = () => {
 							</div>
 							<div className="border-2 w-[2vh] border-[#ffca26] hidden lg:flex"></div>
 
-							<div className="w-full h-full rounded-lg bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex">
+							<div className="w-full h-full rounded-lg ease-linear duration-200 bg-[#f5f7fa] hover:bg-[#ff3656] hover:text-white drop-shadow-xl flex">
 								<div className="p-7 w-full">
 									<p className="font-Gilroy pb-3
 										text-xl
