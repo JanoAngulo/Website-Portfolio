@@ -2,7 +2,6 @@ import React from "react";
 import {motion} from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
 import Jano from "../assets/Angulo,JohnRussel(1).jpg";
-import Jano2 from "../assets/Angulo,JohnRussel(2).jpg";
 
 let Variants, ImgVariant = {};
 const isMobile = window.innerWidth < 1024; //Add the width you want to check for here (now 768px)

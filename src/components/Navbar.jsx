@@ -48,7 +48,7 @@ const Navbar = () => {
              <i class={open ? 'fa-solid fa-xmark text-4xl' : 'fa-solid fa-bars'} ></i>
           </div>
 
-          <ul className={`justify-between font-ProductSans text-base uppercase font-semibold absolute  bg-[#f5f8ff]  z-[-1] w-full left-0 pl-14 transition-all duration-500 ease-in ${open ? 'top-20 opacity-100' : 'top-[-300px]'} 
+          <ul className={`justify-between font-ProductSans text-base uppercase font-semibold absolute bg-[#f5f8ff]  z-[-1] w-full left-0 pl-14 transition-all duration-500 ease-in ${open ? 'top-20 opacity-100' : 'top-[-300px]'} 
 
 					lg:pl-0
 					lg:w-auto
