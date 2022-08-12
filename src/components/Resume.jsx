@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
-import JRLA from "../assets/JRLA-Resume.png";
+import JRLA from "../assets/JRLA-Resume-updated.png";
 import CV from "../assets/John_Russel_L._Angulo_CV.pdf";
 
 let Variants = {};
@@ -111,7 +111,7 @@ const Resume = () => {
 									2xl:text-[20px]">
 									<p>Major in Web and Mobile Development</p>
 									<p>Bulacan State University </p>
-									<p>College | 2018-Present</p>
+									<p>College | August 2018 - July 15, 2022</p>
 									</div>
 
 
@@ -155,8 +155,8 @@ const Resume = () => {
 									text-[18px]
 									2xl:text-[20px]">
 									<p>La Consolacion University Philippines</p>
-									<p>SeniorHighschool | 2016-2018</p>
-									<p>JuniorHighschool | 2012-2016</p>
+									<p>Senior Highschool | 2016-2018</p>
+									<p>Junior Highschool | 2012-2016</p>
 									</div>
 
 
@@ -228,7 +228,7 @@ const Resume = () => {
 									<div className="font-ProductSans
 									text-[18px]
 									2xl:text-[20px]">
-									<p>Upwork | 2021-Present</p>
+									<p>Upwork | 2021 - July 2022</p>
 									</div>
 
 									<p className="font-ProductSans"></p>
