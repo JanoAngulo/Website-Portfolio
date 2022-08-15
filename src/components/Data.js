@@ -1,13 +1,13 @@
-import BJMP from "../assets/ImgData/BJMP-front.png";
-import netflix from "../assets/ImgData/netflix.png";
+import BJMP from "../assets/Thumbnail/BJMP-front.png";
+import netflix from "../assets/Thumbnail/netflix.png";
 
-import Soda from "../assets/ImgData/RiteNLite.png";
-import Teaser from "../assets/ImgData/Bulsu-Cict-Trailer.png";
-import Service from "../assets/ImgData/Service-Management.png";
+import Soda from "../assets/Thumbnail/RiteNLite.png";
+import Teaser from "../assets/Thumbnail/Bulsu-Cict-Trailer.png";
+import Service from "../assets/Thumbnail/Service-Management.png";
 
-import Underwater from "../assets/ImgData/Underwater.png";
-import Lucifer from "../assets/ImgData/Lucifer.png";
-import Landscape from "../assets/ImgData/LandscapePink.png";
+import Underwater from "../assets/Thumbnail/Underwater.png";
+import Lucifer from "../assets/Thumbnail/Lucifer.png";
+import Landscape from "../assets/Thumbnail/LandscapePink.png";
 
 // import Mother from "../assets/ImgData/Mothers-Day.png"
 
