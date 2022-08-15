@@ -6,7 +6,8 @@ const Navbar = () => {
 
   let [open, setOpen] = useState(false);
   return (
-    <>
+    <>				
+		
       <div className="shadow-md bg-[#f5f8ff] w-full top-0 left-0 ">
         <div className='md:flex items-center justify-between py-5 px-14'>
           <div className='font-Gilroy cursor-pointer 2xl:flex xl:flex lg:flex md:flex sm:flex 
@@ -27,6 +28,8 @@ const Navbar = () => {
 						</g>
 					</svg>
 						</Link>
+
+						
 
 							<Link
 							to="Main"

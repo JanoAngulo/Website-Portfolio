@@ -1,6 +1,5 @@
 import React from "react";
 import {motion} from "framer-motion";
-import HS1 from "../assets/HandShake1.jpg";
 import HS2 from "../assets/HandShake2.jpg";
 
 let Variants, VariantsInfo, VariantsInfo2 = {};
@@ -78,7 +77,7 @@ const Contact = () => {
               md:w-full
               lg:w-full
               xl:w-full
-              xl:h-[61vh]
+              xl:h-full
               2xl:h-full"
 						>
 							<div className="h-full w-full

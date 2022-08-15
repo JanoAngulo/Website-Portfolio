@@ -279,9 +279,9 @@ const Resume = () => {
 
 					</div>
 
-					<div className="grid pr-0
+					<div className="grid
 					lg:w-full
-					xl:w-[54.3vh]
+					xl:w-full
 					2xl:w-full">
 						<div className="flex place-items-center justify-items-center pt-5">
 							<div className="w-full h-full rounded-lg bg-[#f5f7fa] drop-shadow-xl flex place-items-center justify-center">
